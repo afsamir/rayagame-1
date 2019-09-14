@@ -14,18 +14,17 @@ export default class AnswerCard extends React.Component {
                 alignItems: "center",
                 justifyContent: "center",
                 height: 'inherit',
-                backgroundColor: "#666666"
-
+                background: "linear-gradient(to right, #7b4397, #dc2430)"
             }}>
-                <Img
-                    src={src}
-                    style={{
-                        width: "100%", height: "100%"
-                    }}
-                    loader={
-                        <Spinner/>
-                    }
-                />
+                <Img className='answer-card'
+                     src={src}
+                     style={{
+                         width: "100%", height: "100%"
+                     }}
+                     loader={
+                         <Spinner/>
+                     }
+                     onClick={this.f}/>
             </div>)
     }
 }
